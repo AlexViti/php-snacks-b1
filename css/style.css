@@ -4,7 +4,10 @@
 	box-sizing: border-box;
 }
 body {
+	width: clamp(800px, 80%, 1400px);
+	margin: 0 auto;
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 1rem;
 	font-family: 'Open Sans', sans-serif;
@@ -26,16 +29,41 @@ h2 {
 ul, ol {
 	padding: 1rem;
 }
+.basketball-games li {
+	padding-left: .5em;
+}
 .basketball-games li::marker {
 	list-style-position: inside;
 	content:"🏀";
 }
 input {
+	margin-top: 1rem;
+	padding: .5em;
 	width: 15ch;
+	margin-right: 1rem;
+	border-radius: 4px;
+	border: 1px solid #ccc;
 }
 input[type="number"] {
-	width: 6ch;
+	width: 8ch;
 }
 .sentence:last-child {
 	display: none;
+}
+ol {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	list-style-position: inside;
+	gap: 1rem;
+}
+ol li::marker {
+	font-size: .6em;
+	color: #777;
+}
+button {
+	border: none;
+	background: #eee;
+	padding: .5rem;
+	border-radius: .5rem;
+	cursor: pointer;
 }
