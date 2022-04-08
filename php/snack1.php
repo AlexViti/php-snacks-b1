@@ -1,7 +1,4 @@
-<?php /*
-	Create an array with 15 basketball games. Each games is an array of home and away team. Each team is an array of name and score. every score is different.
-*/
-//Create array
+<?php 
 $basketballGames = [
 	[
 		"home" => [
