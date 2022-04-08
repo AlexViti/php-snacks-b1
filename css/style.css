@@ -3,7 +3,25 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #333;
+	background: #fff;
+	padding: 1rem;
+}
+* + div, * + p, * + ul, * + ol {
+	margin-top: 1rem;
+}
+h2 {
+	font-size: 3rem;
+}
+ul {
 
-li::before {
+	padding: 1rem;
+}
+li::marker {
+	list-style-position: inside;
 	content:"🏀";
 }
