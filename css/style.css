@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 }
 body {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	line-height: 1.5;
@@ -11,17 +14,28 @@ body {
 	background: #fff;
 	padding: 1rem;
 }
-* + div, * + p, * + ul, * + ol {
+* + div, * + p, * + ul, * + ol, h2, h3 {
 	margin-top: 1rem;
 }
-h2 {
-	font-size: 3rem;
-}
-ul {
-
+section {
 	padding: 1rem;
 }
-li::marker {
+h2 {
+	font-size: 2rem;
+}
+ul, ol {
+	padding: 1rem;
+}
+.basketball-games li::marker {
 	list-style-position: inside;
 	content:"🏀";
+}
+input {
+	width: 15ch;
+}
+input[type="number"] {
+	width: 6ch;
+}
+.sentence:last-child {
+	display: none;
 }
